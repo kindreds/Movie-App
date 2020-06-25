@@ -70,9 +70,9 @@ const campoRequerido = ()=> {
 
 const imprimir = ({ title, overview , release_date , poster_path})=>  {
 
-    if(overview.length > 120 ) {
-        overview = overview.slice(0, 120) + ' ...'
-    }
+    // if(overview.length > 170 ) {
+    //     overview = overview.slice(0, 170) + ' ...'
+    // }
     if( title.search(/\(/) !== -1 && title.length > 21 ){
         title = title.slice( 0 , title.search(/\(/))
         overview = overview.slice(0, 100) + ' ...'

@@ -14,7 +14,7 @@ body {
 .card-columns {
     margin: 3.125rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2.5rem;
 }
 
@@ -25,12 +25,16 @@ body {
     box-shadow: 3px 0px 32px -10px rgba(0,0,0,0.65);
     height: 90vh;
     position: relative;
+    cursor: pointer;
 }
 
 .card .card-body {
     display: flex;
     flex-direction: column;
     padding: 1rem .8rem;
+    height: 29vh;
+    /* overflow: hidden; */
+    /* border: 1px solid white; */
 }
 
 .card .card-body h5 {
@@ -39,11 +43,13 @@ body {
     font-style: italic;
     font-size: 1.0625rem;
     margin-bottom: 0.3125rem;
+
 }
 
 .card .card-body p {
     font-family: 'Poppins', sans-serif;
     font-size: 0.9375rem;
+    overflow: hidden;
 }
 
 .card img {
@@ -62,16 +68,10 @@ span {
     font-weight: bold;
     border-radius: 0.9375rem;
 }
-/* .block_nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 5rem;
-} */
 
 .block_nav {
     display: grid;
-    grid-template-columns: minmax(240px , 500px);
+    grid-template-columns: minmax(280px , 500px);
     justify-content:  center;
     margin: 0 3.125rem;
     place-items: center;
@@ -201,34 +201,10 @@ span {
       transform: scale(1.0); 
     } 
   }
-
-  /* @media screen and ( max-width: 1024px ){
-    .card-columns{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-  }
-  @media screen and ( max-width: 768px ){
-    .card-columns,{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-  } */
   @media screen and ( max-width: 425px ){
-    /* .card-columns{
-        grid-template-columns: 1fr;
-        margin: 2rem;
-    } */
-    /* .block_nav {
-        margin-top: 1.25rem;
-        display: flex;
-        flex-direction: column;
-    } */
-    /* .buscador {
-        width: 80vw !important;
-        height: 35px;
-        display: flex;
-    } */
+    .card-columns{
+        margin: 1rem;
+    }
     .card .card-body{
         padding: 15px;
     }
